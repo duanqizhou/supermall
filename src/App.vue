@@ -1,14 +1,23 @@
 <template>
   <div id="app">
+    <router-view/>
+    <main-tab-bar/>
   </div>
 </template>
 
 <script>
-export default {
-  
-}
+  import MainTabBar from 'components/content/mainTabbar/MainTabBar'
+
+  export default {
+    name: 'app',
+    components: {
+      MainTabBar
+    }
+  }
+
 </script>
 
 <style lang="scss">
   @import "assets/css/base.css";
+
 </style>
